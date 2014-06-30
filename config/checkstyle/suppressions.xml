@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2013 EAN.com, L.P. All rights reserved.
+  -->
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <suppress checks="JavadocPackage" files="test/*"/>
+    <suppress checks="JavadocMethod" files="test/*"/>
+    <suppress checks="JavadocType" files="test/*"/>
+    <suppress checks="JavadocVariable" files="test/*"/>
+    <!-- The list of supported locales are fairly self-explanatory. -->
+    <suppress checks="JavadocVariable" files="SupportedLocale.java"/>
+    <!-- Same with LocaleType -->
+    <suppress checks="JavadocVariable" files="LocaleType.java"/>
+    <suppress checks="FinalLocalVariableCheck" files="test/*"/>
+    <suppress checks="MagicNumber" files="test/*"/>
+    <!-- Obviously, since there is a need for an uncommented main in that class -->
+    <suppress checks="UncommentedMain" files="Main.java"/>
+    <!-- LocaleType is very large and there's nothing we can really do about it -->
+    <suppress checks="JavaNCSS" files="LocaleType.java"/>
+    <suppress checks="JUnitTestCase" files="test/*"/>
+</suppressions>
